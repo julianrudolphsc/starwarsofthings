@@ -1,0 +1,26 @@
+<% include partials/header%>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2>Results</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h2 class="text-center"><%= data.results[0].name%></h2>
+      <ul class="list-group">
+        <li class="list-group-item">Height: <%= data.results[0].height%></li>
+        <li class="list-group-item">Weight: <%= data.results[0].mass%></li>
+        <li class="list-group-item">Hair Color: <%= data.results[0].hair_color%></li>
+        <li class="list-group-item">Birth: <%= data.results[0].birth_year%></li>
+      </ul>
+      <a class="btn btn-warning btn-xs" href="/">return to home</a>
+    </div>
+  </div>
+</div>
+
+
+
+<% include partials/footer%>
